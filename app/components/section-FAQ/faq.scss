@@ -1,0 +1,58 @@
+.section-faq {
+    display: grid;
+    grid-row-gap: 15px;
+
+
+}
+
+.question{
+    display: grid;
+    justify-items: start;
+     grid-row-gap: 10px;
+
+
+
+    &__title{
+        text-align: left;
+
+        &:hover{
+            cursor: pointer;
+
+        }
+    }
+
+}
+
+
+@media(min-width: 480px) {
+
+
+
+}
+
+
+@media(min-width: 768px) {
+
+
+    .section-faq{
+        grid-row-gap: 25px;
+    }
+     
+
+
+}
+
+@media(min-width: 992px) {
+
+    .section-faq{
+       max-width: 830px;
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .section-faq{
+         max-width: 980px;
+    }
+} 
+

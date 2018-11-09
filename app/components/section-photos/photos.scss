@@ -1,0 +1,204 @@
+.section-photos{
+    display: grid;
+    grid-row-gap: 10px;
+    justify-items: center;
+}
+
+ 
+.photos-grid {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+ // overflow-x: scroll;
+
+    &__photo--width{
+        width: 280px;
+      max-height: 200px;
+  }
+
+ 
+
+   
+
+}
+
+
+
+@media(min-width: 480px) {
+     &__photo--width{
+        width: 340px;
+      max-height: 200px;
+  }
+
+
+}
+
+
+@media(min-width: 768px) {
+
+    .section-photos{
+          grid-row-gap: 20px;
+    }
+
+   $height: 70;
+   $width: 180;
+
+            .photos-grid {
+            display: grid;
+            justify-items: stretch;
+            align-content: stretch;
+            grid-template-areas: 
+            "photo1 photo2 photo3"
+            'photo4 photo2 photo3'
+            'photo5 photo6 photo6'
+            'photo5 photo7 photo7'
+            'photo5 photo8 photo9';
+
+                
+
+     &__photo1{
+        grid-area: photo1;
+        width: $width + px;
+        height: $height + px;
+        
+    }
+    &__photo2{
+        grid-area: photo2;
+       width: $width + px;
+        height: $height*2 + px;
+    }
+    &__photo3{
+        grid-area: photo3;
+        width: $width + px;
+       height: $height*2 + px;
+
+    }
+    &__photo4{
+        grid-area: photo4;
+        width: $width + px;
+        height: $height + px;
+    }
+    &__photo5{
+        grid-area: photo5;
+        width: $width + px;
+        height: $height*3 + px;
+    }
+    &__photo6{
+        grid-area: photo6;
+         width: $width*2 + px;
+        height: $height + px;
+    }
+    &__photo7{
+        grid-area: photo7;
+         width: $width*2 + px;
+        height: $height + px;
+    }
+    &__photo8{
+        grid-area: photo8;
+        width: $width + px;
+        height: $height + px;
+    }
+    &__photo9{
+        grid-area: photo9;
+        width: $width + px;
+        height: $height + px;
+    }
+
+
+
+      &__photo--width{
+             max-width: 900px;
+             max-height: 1000px;
+         }
+
+        }
+
+       
+
+
+
+}
+
+@media(min-width: 992px) {
+
+    $height: 100;
+   $width: 230;
+
+
+    .photos-grid {
+            display: grid;
+            justify-items: stretch;
+            align-content: stretch;
+            grid-template-areas: 
+            "photo1 photo2 photo3"
+            'photo4 photo2 photo3'
+            'photo5 photo6 photo6'
+            'photo5 photo7 photo7'
+            'photo5 photo8 photo9';
+
+                
+
+     &__photo1{
+        grid-area: photo1;
+        width: $width + px;
+        height: $height + px;
+        
+    }
+    &__photo2{
+        grid-area: photo2;
+       width: $width + px;
+        height: $height*2 + px;
+    }
+    &__photo3{
+        grid-area: photo3;
+        width: $width + px;
+       height: $height*2 + px;
+
+    }
+    &__photo4{
+        grid-area: photo4;
+        width: $width + px;
+        height: $height + px;
+    }
+    &__photo5{
+        grid-area: photo5;
+        width: $width + px;
+        height: $height*3 + px;
+    }
+    &__photo6{
+        grid-area: photo6;
+         width: $width*2 + px;
+        height: $height + px;
+    }
+    &__photo7{
+        grid-area: photo7;
+         width: $width*2 + px;
+        height: $height + px;
+    }
+    &__photo8{
+        grid-area: photo8;
+        width: $width + px;
+        height: $height + px;
+    }
+    &__photo9{
+        grid-area: photo9;
+        width: $width + px;
+        height: $height + px;
+    }
+
+
+
+      &__photo--width{
+             max-width: 900px;
+             max-height: 1000px;
+         }
+
+        }
+
+}
+
+
+@media(max-width: 1200px) {
+
+} 

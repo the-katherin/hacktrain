@@ -1,0 +1,367 @@
+@import "components/header/header";
+@import "components/section-main/main";
+@import "components/section-about/about";
+@import "components/section-speakers/speakers";
+@import "components/section-photos/photos";
+@import "components/section-FAQ/faq";
+@import "components/section-partners/partners";
+@import "components/section-destination/destination";
+
+
+
+@font-face {
+    font-family: 'muliblack';
+    src: url('fonts/muli-black-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'mulibold';
+    src: url('fonts/muli-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'mulilight';
+    src: url('fonts/muli-light-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'muliregular';
+    src: url('fonts/muli-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'mulisemibold';
+    src: url('fonts/muli-semibold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+$mainTextColor: black;
+$headersColor: #4F2F60;
+$mainFont: 'muliregular';
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+header {
+    font-size: 18px;
+
+    a:hover{
+         font-size: 20px;
+    }
+}
+
+a {
+	text-decoration: none;
+    color: inherit;
+    
+    
+    &:hover {
+       
+        cursor: pointer;
+    }
+ 
+
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ h2, h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: $headersColor;
+
+}
+
+h2{
+     font-size: 24px;
+     font-family: 'muliblack';
+     padding-bottom: 15px;
+}
+
+h3{
+    font-size: 20px;
+     font-family: 'mulibold';
+}
+
+
+
+h1{
+    
+   font-family: 'muliblack';
+   font-size: 28px;
+   color: blue;
+   color: #C9131B;
+   color: #f4004a;
+   color: #d83b01;
+   color: #C62424;
+   color: #be2c37;
+   color: #41274F;
+   color: $headersColor;
+ // color: #292929;
+}
+
+section {
+    padding-top: 20px;
+  
+    
+}
+
+
+
+
+button {
+    display: grid;
+    font-family: "mulisemibold";
+    font-size: 18px;
+    padding: 15px 35px;
+    background-color:  $headersColor;
+    color: white;
+    text-transform: uppercase;
+
+    &:hover {
+        cursor: pointer;
+         background-color: white;
+         color: $headersColor;
+    }
+}
+
+.content {
+    display: grid;
+    width: 100%;
+    grid-auto-flow: row;
+    color:$mainTextColor;
+    font-size: 18px;
+    font-family: $mainFont;
+}
+
+.main {
+    
+    display: grid;
+    padding-top: 100px; 
+    // background-color: #F0FEFD;
+
+}
+
+.sections-wrapper{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 0px 15px;
+    background: url('img/funky-lines.png') repeat;
+
+}
+
+header{
+    color: white;
+      background-color: #CD690E;
+      font-family: "mulisemibold";
+}
+
+
+footer {
+    padding: 1% 2%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+@media(min-width: 480px) {
+
+    
+        h1{
+              font-size: 30px;
+         }
+
+         h2{
+     font-size: 26px;
+}
+
+        h3{
+            font-size: 22px;
+         }
+
+
+
+        section{
+            padding-top: 30px;
+        }
+
+        button {
+           font-size: 20px;
+        }
+
+        .sections-wrapper {
+            padding: 0px 20px;
+            font-size: 18px;
+        }
+    
+}
+
+
+@media(min-width: 768px) {
+
+    h1{
+              font-size: 36px;
+         }
+    h2{
+     font-size: 28px;
+}
+          h3{
+            font-size: 22px;
+         }
+
+  
+
+         section{
+            padding-top: 40px;
+        }
+
+        .sections-wrapper{
+            font-size: 20px;
+        }
+
+        button {
+           font-size: 20px;
+        }
+
+        .sections-wrapper {
+            padding: 0px 35px;
+        }
+    
+
+}
+
+@media(min-width: 992px) {
+
+        header a {
+            font-size: 20px;
+
+            &:hover{
+                 font-size: 22px;
+            }
+        }
+
+          h2{
+     font-size: 30px;
+}
+
+    h1{
+              font-size: 40px;
+         }
+
+          h3{
+            font-size: 24px;
+         }
+
+        section{
+            padding-top: 60px;
+        }
+        
+        .sections-wrapper {
+         font-size: 22px;
+    
+        }
+
+ 
+
+}
+
+
+@media(min-width: 1200px) {
+
+    header a {
+            font-size: 22px;
+
+            &:hover{
+                 font-size: 24px;
+            }
+
+        }
+
+         h1{
+              font-size: 48px;
+         }
+
+           h2{
+         font-size: 34px;
+          padding-bottom: 25px;
+        }
+
+         h3{
+            font-size: 26px;
+         }
+
+ 
+
+        section{
+            padding-top: 70px;
+        }
+        
+
+       
+        
+         .sections-wrapper {
+              font-size: 24px;
+       
+        }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // background-color: #371e58; 
+    // background-color: #68237F;
+    // background-color: #FFB170;
+    // background-color:#FFD3AD;
+    // background-color:#FFE5C7;
+
+    //   background-color:#FFF2C7;
+

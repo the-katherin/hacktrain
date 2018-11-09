@@ -1,0 +1,78 @@
+.section-destination {
+    display: grid;
+    grid-row-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.map {
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+.agenda-grid{
+    display: grid;
+      grid-row-gap: 10px;
+
+}
+
+.agenda{
+    display: grid;
+    grid-row-gap: 10px;
+    align-content: start;
+
+}
+
+
+
+@media(min-width: 480px) {
+   
+    .section-about {
+      padding-left: 20px;
+       padding-right:  20px;
+    }
+
+}
+
+
+@media(min-width: 768px) {
+
+     .agenda-grid{
+    
+      grid-row-gap: 20px;
+
+}
+
+.agenda{
+   
+    grid-row-gap: 20px;
+
+}
+
+    
+
+    
+     
+
+}
+
+@media(min-width: 992px) {
+
+    .agenda-grid{
+        grid-auto-flow: column;
+        grid-template-columns: repeat(3, 30%);
+        grid-column-gap: 30px;
+     
+
+}
+
+}
+
+
+@media(min-width: 1200px) {
+    .section-about {
+    max-width: 980px;
+    }
+   
+} 

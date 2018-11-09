@@ -1,0 +1,53 @@
+.speakers-grid {
+    display: grid;
+    grid-row-gap: 15px;
+    justify-items: center;
+   // 
+
+}
+
+.speaker {
+    display: grid;
+    grid-row-gap: 10px;
+    justify-items: center;
+
+    &__photo{
+        max-width: 280px;
+        max-height: 280px;
+    }
+    &__name {
+        text-decoration: underline;
+    }
+}
+
+
+
+@media(min-width: 480px) {
+
+
+
+}
+
+
+@media(min-width: 768px) {
+    .speakers-grid{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+
+    .speaker{
+        margin-bottom: 25px;
+    }
+
+}
+
+@media(min-width: 992px) {
+
+}
+
+
+@media(max-width: 1200px) {
+
+} 
